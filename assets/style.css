@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Mingzat&display=swap');
 body {
   margin: 0px;
-    font-family: 'Mingzat', sans-serif;
+  font-family: 'Mingzat', sans-serif;
+}
+header{
+  top: 0px;
+  position: sticky;
 }
 nav{
   padding: 5px;
   background: #858DE8;
-  position: sticky;
 }
 nav h1{
   margin: 0px 20px;
@@ -21,4 +24,15 @@ nav a{
   color: whitesmoke;
   text-decoration: none;
   font-size: 14pt;
+}
+.banner-img{
+  width: 60%;
+  height: 60%;
+  float: right;
+}
+/* class universal */
+.flex{display: inline;}
+
+@media screen {
+  
 }
