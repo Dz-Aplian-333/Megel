@@ -10,25 +10,31 @@
 </head>
 
 <body>
+  <!-- header -->
   <header>
-    <nav id="Home" class="p-white">
-      <h1 class="float-l">Megel</h1>
-      <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#Promo">Promo</a></li>
-        <li><a href="#Berlangganan">Berlangganan</a></li>
-        <li><a href="#Lainnya">Lainnya</a></li>
+    <nav class="p-white">
+      <h1>Megel</h1>
+      <div class="dropdown">
+        <a class="menu"><i class="fa-solid fa-bars"></i></a>
+        <ul>
+        <li class="drp-item"><a href="#">Home</a></li>
+        <li class="drp-item"><a href="#Promo">Promo</a></li>
+        <li class="drp-item"><a href="#Berlangganan">Berlangganan</a></li>
+        <li class="drp-item"><a href="#Lainnya">Lainnya</a></li>
       </ul>
+      </div>
     </nav>
   </header>
   <main>
     <div class="banner">
       <picture>
-        <a href="#"><img src="assets/image/home.jpg" class="banner-img float-r sz60" /></a>
+        <a href="#"><img src="assets/image/home.jpg" class="banner-img" /></a>
       </picture>
-      <h2>Internetan sepuasnya</h2>
+      <div class="banner-item">
+       <h2>Internetan sepuasnya</h2>
       <p>Buat keluargamu nyaman dengan koneksi internet cepat, aman dan tanpa batas</p>
       <a href="#Berlangganan" class="btn p-white" >Mulai sekarang</a>
+      </div>
     </div>
     <article>
       <h3>Kenapa pake Megel?</h3>
@@ -37,47 +43,57 @@
     <div id="Promo">
       <h2>Promo Banter</h2>
       <p>spesial Idul Adha kamu tidak hanya dapet potongan daging kurban tapi juga bisa dapetin potongan harga internet </p>
-      <selection>
-        <div class="card float-l">
-          <h3>5 Mbps</h3>
-          <h4>275k</h4>
-          <p>300.000</p>
-          <a href="#" class="btn p-white">Pilih Paket</a>
-        </div>
-        <div class="card float-l">
-          <h3>10 Mbps</h3>
-          <h4>350k</h4>
-          <p>500.000</p>
-          <a href="#" class="btn p-white">Pilih Paket</a>
-        </div>
-        <div class="card float-l">
-          <h3>20 Mbps</h3>
-          <h4>500k</h4>
-          <p>800.000</p>
-          <a href="#" class="btn p-white">Pilih Paket</a>
-        </div>
-      </selection>
+      <div>
+        <ul class="card ">
+          <li><h3>5 Mbps</h3></li>
+          <li><h4>275.000</h4></li>
+          <li><span class="disable">300.000</span></li>
+          <li><button onclick="BtnPromo()" type="submit" class="btn p-white">Pilih Promo</button></li>
+        </ul>
+        <ul class="card">
+          <li><h3>10 Mbps</h3></li>
+          <li><h4>370.000</h4></li>
+          <li><span class="disable">500.000</span></li>
+          <li><button onclick="BtnPromo()" type="submit" class="btn p-white">Pilih Promo</button></li>
+        </ul>
+        <ul class="card">
+          <li><h3>20 Mbps</h3></li>
+          <li><h4>500.000</h4></li>
+          <li><span class="disable">800.000</span></li>
+          <li><button onclick="BtnPromo()" type="submit" class="btn p-white">Pilih Promo</button></li>
+        </ul>
+      </div>
     </div>
     <div id="Berlangganan">
       <h2>Berlangganan</h2>
       <p>Kamu bisa mulai berlangganan setelah  melakukan registrasi dan membayar biaya yang dipilih</p>
-      <selection>
-        <div>
-          <h3>Registrasi</h3>
-          <p>biaya registrasi wifi home</p>
-          <h5>500.000</h5>
-          <a href="#" class="btn p-white">Registrasi</a>
-        </div>
-      </selection>
+      <div>
+        <ul class="card">
+          <li><h3>Wifi Home</h3></li>
+          <li><p>nikmati internetan bersama keluarga</p></li>
+          <li><h4>500.000</h4></li>
+          <li><button onclick="BtnRegister()" type="submit" class="btn p-white">Registrasi</button></li>
+        </ul>
+        <ul class="card">
+          <li><h3>Wifi Home + TV</h3></li>
+          <li><p>tonton movie dari berbagai negara</p></li>
+          <li><h4>800.000</h4></li>
+          <li><button onclick="BtnRegister()" type="submit" class="btn p-white">Registrasi</button></li>
+        </ul>
+      </div>
     </div>
-    <aside id="Lainnya">
-      <img src="assets/image/dzaki" alt="" width="100%" height="100%"/>
+    <div id="Lainnya">
+      <h3>Biodata</h3>
+      <img class="biodata-img" src="assets/image/dzaki.jpg">
+      <h4>DZAKI AFRIAN</h4>
       
-    </aside>
+    </div>
   </main>
   <footer class="p-white">
     <p>Megel 2022 | Dzaki Afrian</p>
   </footer>
+  <!-- JavaScript link -->
   <script src="assets/script.js"></script>
+  <script src="https://kit.fontawesome.com/80f3ed311f.js" crossorigin="anonymous"></script>
 </body>
 </html>
