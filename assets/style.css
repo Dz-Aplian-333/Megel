@@ -32,7 +32,7 @@ main{
   margin: 0px 10px;
   text-align: center
 }
-a{text-decoration: none}
+a{text-decoration: none;}
 a:hover{
   font-weight: bold;
   text-decoration: underline;
@@ -59,6 +59,10 @@ a:hover{
   width: 20%;
   height: 20%;
   border-radius: 50%;
+}
+.icon{
+  display: inline;
+  font-size: 20pt;
 }
 /* footer */
 footer{
